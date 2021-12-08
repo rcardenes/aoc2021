@@ -11,3 +11,4 @@ This is part of the AoC Canarias channel discussion. Repos from other members in
 * [Víctor Ruiz](https://github.com/vrruiz/aoc2021)
 * [José Rodríguez](https://github.com/boriel/advent2021)
 * [Juan Ignacio Rodríguez de León](https://github.com/euribates/advent_of_code_2021)
+* [Jesús Torres](https://github.com/aplatanado/advent-of-code-2021)
