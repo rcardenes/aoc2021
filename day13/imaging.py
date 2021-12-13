@@ -15,15 +15,7 @@ def fold_up(paper, line):
     return upper
 
 def fold_left(paper, line):
-    left, right = paper[:,:line], np.fliplr(paper[:,line+1:])
-    left_h, right_h = left.shape[0], right.shape[0]
-    if right_h > left_h:
-        right, left = left, right
-        left_h, right_h = right_h, left_h
-
-    overlapping = left_h - right_h
-    left[:,overlapping:] = np.logical_or(left[:,overlapping:], right)
-    return left
+    return fold_up(paper.T, line).T
 
 def count_dots(paper):
     return len(np.where(paper)[0])
