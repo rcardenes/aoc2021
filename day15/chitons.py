@@ -64,10 +64,7 @@ def main(data):
 
     full_map = generate_full_map(data)
     rows, cols = full_map.shape
-    # print("Part 2:", total_risk(calc_path(full_map, start=(0, 0), goal=(rows-1, cols-1)), full_map))
-    now = time.time()
-    total_risk(calc_path(full_map, start=(0, 0), goal=(rows-1, cols-1)), full_map)
-    print(time.time() - now)
+    print("Part 2:", total_risk(calc_path(full_map, start=(0, 0), goal=(rows-1, cols-1)), full_map))
 
 
 def read_input(stream):
